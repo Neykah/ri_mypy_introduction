@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "python_none_problem"
+version = "0.1.0"
+description = "Code used for RI's enlightening talk on 2022/01/27. Based on the following tutorial: https://engineeringblog.ridereport.com/pythons-none-problem"
+authors = ["Morgan Lefranc <mlefranc@ridge-i.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.931"
+black = "^21.12b0"
+
+[tool.poetry.scripts]
+foo_example = "python_none_problem.foo_example:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
