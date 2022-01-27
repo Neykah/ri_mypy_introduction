@@ -1,5 +1,5 @@
 from typing import Optional
-from foo import Foo
+from foo_example import Foo
 
 
 class Bar:
