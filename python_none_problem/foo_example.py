@@ -1,4 +1,9 @@
-from .foo import Foo
+from dataclasses import dataclass
+
+
+@dataclass(frozen=True)
+class Foo:
+    x: int
 
 
 class FooException(Exception):
@@ -17,8 +22,5 @@ def do_something_with(a_foo):
 
 def main():
     foo = get_a_foo(123)
-
-    if foo is None:
-        raise FooException("couldn't get a foo, oh no!")
     do_something_with(foo)
     print("Success")

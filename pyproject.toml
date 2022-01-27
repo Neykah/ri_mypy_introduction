@@ -15,6 +15,8 @@ black = "^21.12b0"
 foo_example = "python_none_problem.foo_example:main"
 
 [tool.mypy]
+python_version = "3.10"
+check_untyped_defs = true
 disallow_untyped_defs = true
 disallow_incomplete_defs = true
 
